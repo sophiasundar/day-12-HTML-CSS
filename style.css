@@ -1,0 +1,96 @@
+.container{
+    max-width: 700px;
+    width:100%;
+    padding: 25px 30px;
+    border: 3px soild black;
+    justify-content: center;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+    border-color: black;
+    box-sizing: border-box !important;
+}
+
+h3 , p{
+    text-align: center;
+    border:10px;
+    border-color: black;
+    padding-top: 2px;
+    padding-bottom: 5px;
+    padding-left: 40px;
+}
+
+input{
+    display:block;
+    width: 200px;
+    margin-bottom: opx;
+    text-align:center;
+    margin-left: 100px;
+}
+
+input[type=number]{
+    display:block;
+    width: 200px;
+    margin-bottom: opx;
+    text-align:center;
+    margin-left: 100px;
+}
+
+ button[type=submit],[type=cancel]{
+        margin-top:10px;
+        margin-left: 100px;
+    }
+
+/* // X-Small devices (portrait phones, less than 576px) */
+ @media (max-width: 575.98px) {  
+    .container{
+        max-width: 100%;
+           width: 100%;
+   } 
+     input,input[type=number]{
+          width: 100%;
+     }
+     button{
+       width:100%;
+     }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {  
+    .container{
+        max-width: 100%;
+           width: 100%;
+   } 
+      input{
+          width: 50%;
+     }
+     input[type=number]{
+       width: 50%;
+     }
+     button{
+       width:50%;
+     }
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {  
+  .container{
+      max-width: 100%;
+         width: 100%;
+ } 
+    input{
+        width: 50%;
+   }
+   input[type=number]{
+     width: 50%;
+   }
+   button{
+     width:25%;
+   }
+}
+
